@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Obrigado pela compra!</title>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function()
+    {n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}
+    (window, document,'script');
+
+    fbq('init', 'SEU_PIXEL_ID_AQUI'); // Substitua pelo seu ID do Pixel
+    fbq('track', 'PageView');
+  </script>
+</head>
+<body style="font-family:sans-serif;text-align:center;margin-top:100px;background-color:#f9f9f9;">
+  <h1 style="font-size:60px;">✅</h1>
+  <h2 style="color:#333;">Obrigado pela compra, môh!</h2>
+  <a href="https://seulinkdestino.com" 
+     onclick="fbq('track', 'Purchase', {value: 49.90, currency: 'BRL'});" 
+     style="display:inline-block;margin-top:30px;padding:14px 28px;
+     background-color:#28a745;color:white;text-decoration:none;
+     font-size:16px;font-weight:bold;border-radius:8px;">
+    Ver conteúdo
+  </a>
+</body>
+</html>
