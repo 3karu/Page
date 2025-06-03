@@ -60,5 +60,18 @@ src="https://www.facebook.com/tr?id=634153149629805&ev=PageView&noscript=1"
       background-color: #218838;
     }
   </style>
+<body>
+  <div class="container">
+    <div class="emoji">✅</div>
+    <h1>Obrigado pela compra🥰</h1>
+    <button class="btn" onclick="handleRedirect()">Ver presentinho</button>
+  </div>
+
+  <script>
+    function handleRedirect() {
+      fbq('track', 'Purchase'); // Trigger conversion
+      window.location.href = 'https://seulink.com'; // <-- customize here
+    }
+  </script>
 </body>
 </html>
